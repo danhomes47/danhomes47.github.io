@@ -1,0 +1,330 @@
+/*
+ * Estilo de la página
+ * Curriculum Vitae
+*/
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    height: 2000px;
+}
+
+/* Clase para las secciones */
+.clase-seccion {
+    padding-left: 2em;
+    padding-right: 2em;
+    position: relative; 
+    overflow: scroll;
+}
+@media (min-width: 768px) {
+    .clase-seccion {
+        padding-left: 2em;
+        padding-right: 2em;
+        position: relative;
+	    overflow: scroll;
+    }
+}
+
+/* Config. de fuentes usadas 
+ * La saco porque uso Google Fonts *
+@font-face {
+    font-family: Trocchi;
+    src: url("../fonts/Trocchi/Trocchi-Regular.ttf");
+
+    font-family: Inprimis;
+    src: url("../fonts/Inprimis-Free/Inprimis55regular_v126free.ttf");
+
+    font-family: Berlin;
+    src: url("../fonts/Berlin/Berlin.ttf");
+
+    font-family: Prox;
+    src: url("../fonts/Prox/FontsFree-Net-Prox-Regular.ttf");
+}*/
+
+h1 {
+    font-family: 'Trocchi', sans-serif; 
+    font-size: 40px; 
+    font-weight: 500;
+    padding-top: 2em;
+    text-align: center;
+    color: #ffffff; 
+    line-height: 50px; 
+    letter-spacing: 1px; 
+    /*padding: 0 0 40px;
+    border-bottom: double #555; */ 
+}
+
+h2 {
+    font-family: 'Merriweather';
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+p {
+    color: #bbc3c8; 
+    font-family: 'Noto Sans Display'; 
+    font-size: 16px; 
+    line-height: 22px; 
+    text-indent: 00px; 
+    margin: 2em; 
+    text-align: left;
+    text-justify: auto;
+}
+
+/* Configuracion para la fecha */
+.date {
+    overflow: hidden;
+    color: #bbc3c8; 
+    font-family: 'Georgia', serif; 
+    font-style: italic; 
+    font-size: 18px;
+    text-align: left;
+    margin-left: 2em;
+}
+  
+.date:before,
+.date:after {
+    content: "";
+    display: inline-block;
+    background-color: #bbc3c8;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+}
+  
+.date:before {
+    right: 1em;
+    width: 10%;
+}
+  
+ .date:after {
+    left: 1em;
+    width: 30%;
+}
+
+.date-p {
+    color: #bbc3c8; 
+    font-family: 'Noto Sans Display', serif; 
+    font-size: 14px; 
+    line-height: 22px; 
+    text-indent: 00px;
+    margin-top: 0.5em; 
+    margin-bottom: 0.5em; 
+    text-align: center;
+    text-justify: auto;
+}
+
+/* Config. para el boton que salta al inicio */
+#btn-ir-arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #08ac10;
+    cursor: pointer;
+}
+
+#btn-ir-arriba:hover{
+    color: white;
+    font-weight: bold;
+}
+
+.btn-xxl {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Config. para la navbar */
+.bg-custom {
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+.nav-link {
+    color: rgb(240, 240, 240);
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #08ac10;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+    border-color: white;
+} 
+
+/* Config. para los botones del Quien Soy */
+.btn-QS {
+    /*background-color: #08ac10;*/
+    color:rgb(240, 240, 240);
+    color:#08ac10;
+    font-size: 45px;
+    border-radius: 5px;
+    float: left;
+    /*margin: 10px;
+    padding: 3px;*/
+}
+
+/* Config. de la imagen */
+.caja-img {
+    display: block;
+    border: 1px solid #08ac10;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+}
+
+/* ------------- */
+.texto-celda {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    float: left;
+}
+.texto-datos {
+    font-family: 'Literata', sans-serif;
+    font-size: 15px;
+    padding-left: 65px;
+    padding-top: 16px;
+    padding-bottom: 7px;
+}
+.texto-datos span {
+    display: block;
+    margin-bottom: 3px;
+    color: #08ac10;
+    font-size: 15px;
+    font-weight: bold;
+}
+.texto-datos-js {
+    color: white;
+    font-size: 15px;
+}
+
+/* Config. para las Habilidades */
+.margen-2 {
+    margin-top: 2em;
+}
+.h4-titulo {
+    font-family: 'Literata', sans-serif;
+    font-size: 14px;
+    margin-top: 1em;
+}
+
+.progress-height-bar {
+    height: 2em;
+}
+
+.progress-bar-bg {
+    background-color: #08ac10;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: right;
+    padding-right: 2em;
+}
+
+/* Config para colores del boton de Descarga */
+.btn-outline-primary, 
+.btn-outline-primary:hover, 
+.btn-outline-primary:visited {
+    border-color: #08ac10;
+    color: white;
+
+}
+
+.btn-outline-primary:hover {
+    border-color: #08ac10;
+    background-color: #08ac10;
+}
+
+.btn-outline-primary:active {
+    border-color: #08ac10;
+    background-color: #06800c !important;
+}
+
+/* Config. para el formulario de contacto */
+.texto-form span {
+    display: block;
+    margin-top: 1em;
+    color: #08ac10;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-control-xxl {
+    height: calc(1.5em + .5rem + 6px);
+    width: 90%;
+    padding: .25rem .5rem;
+    font-size: 1.3em;
+    line-height: 1;
+    border-radius: .3rem;
+    background-color: #c4c4c4;
+}
+
+.form-control-xxl-textarea {
+    padding: .25rem .5rem;
+    font-size: 1.3em;
+    line-height: 1;
+    border-radius: .3rem;
+    background-color: #c4c4c4;
+    margin-bottom: 2em;
+    width: 90%;
+}
+
+.btn-contact {
+    /*background-color: #08ac10;*/
+    color:rgb(240, 240, 240);
+    color:#08ac10;
+    font-size: 25px;
+    border-radius: 5px;
+    float: left;
+    /*margin: 10px;
+    padding: 3px;*/
+}
+.texto-celda-contacto {
+    margin-top: 0px;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    float: left;
+}
+.texto-contacto {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-top: 0.5em;
+    padding-bottom: 7px;
+    color: #08ac10;
+    font-weight: bold;
+}
+
+.texto-contacto span {
+    /*display: block;*/
+    margin-bottom: 1em;
+    color: white;
+    font-size: 15px;    
+    font-weight: normal;
+}
+
+/* Config de la linea final */
+.linea-final {
+   margin-top: 10px;
+   margin-bottom: 3em;
+}
+
+.linea-final hr {
+   border: 2px solid #08ac10;
+   border-radius: 3px;
+}
