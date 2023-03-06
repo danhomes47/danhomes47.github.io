@@ -320,11 +320,24 @@ p {
 
 /* Config de la linea final */
 .linea-final {
-   margin-top: 10px;
-   margin-bottom: 3em;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
 }
 
 .linea-final hr {
-   border: 2px solid #08ac10;
+   border: 1px solid #08ac10;
    border-radius: 3px;
+}
+
+/* footer */
+
+.footer-style {
+    padding: 5px;
+}
+footer {
+  color: white;
+}
+footer .footer-col {
+  margin: 0;
+  padding: 0px;
 }
